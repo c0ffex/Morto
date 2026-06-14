@@ -1,0 +1,7 @@
+version: 1
+bundleID: com.example.CallBlock
+entitlementsPath: CallBlock.entitlements
+extensions:
+  - product: CallBlockDirectory
+    infoPath: Sources/CallBlockDirectory/Info.plist
+    entitlementsPath: CallBlockDirectory.entitlements

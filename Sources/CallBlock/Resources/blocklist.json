@@ -1,0 +1,16 @@
+[
+  {
+    "id": "E621E1F8-C36C-495A-93FC-0C247A3E6E5F",
+    "value": "0303",
+    "type": "prefix",
+    "enabled": true,
+    "label": "Telemarketing (Ligacoes de Call Centers)"
+  },
+  {
+    "id": "A1B2C3D4-E5F6-7890-ABCD-EF1234567890",
+    "value": "0304",
+    "type": "prefix",
+    "enabled": false,
+    "label": "Cobranca / Servicos Financeiros"
+  }
+]
