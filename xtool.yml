@@ -1,5 +1,6 @@
 version: 1
 bundleID: com.example.CallBlock
+product: CallBlock
 entitlementsPath: CallBlock.entitlements
 extensions:
   - product: CallBlockDirectory
