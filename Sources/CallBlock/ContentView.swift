@@ -1,4 +1,5 @@
 import SwiftUI
+import CallBlockShared
 
 struct ContentView: View {
     @EnvironmentObject var blockList: BlockListManager
