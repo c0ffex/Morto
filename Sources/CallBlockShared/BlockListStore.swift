@@ -1,13 +1,17 @@
 import Foundation
 
-public struct BlockListStore {
+public struct BlockListStore: Sendable {
     static let appGroupIdentifier = "group.com.example.CallBlock"
 
     public static let shared: BlockListStore? = {
+#if canImport(Darwin)
         guard let containerURL = FileManager.default.containerURL(
             forSecurityApplicationGroupIdentifier: appGroupIdentifier
         ) else { return nil }
         return BlockListStore(containerURL: containerURL)
+#else
+        return nil
+#endif
     }()
 
     private let containerURL: URL
