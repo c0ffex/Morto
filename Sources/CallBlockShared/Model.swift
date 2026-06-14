@@ -1,19 +1,19 @@
 import Foundation
 
-enum BlockEntryType: String, Codable {
+public enum BlockEntryType: String, Codable {
     case phoneNumber
     case prefix
     case label
 }
 
-struct BlockEntry: Codable, Identifiable, Equatable {
-    let id: UUID
-    let value: String
-    let type: BlockEntryType
-    let label: String?
-    let enabled: Bool
+public struct BlockEntry: Codable, Identifiable, Equatable {
+    public let id: UUID
+    public let value: String
+    public let type: BlockEntryType
+    public let label: String?
+    public let enabled: Bool
 
-    init(value: String, type: BlockEntryType, label: String? = nil, enabled: Bool = true) {
+    public init(value: String, type: BlockEntryType, label: String? = nil, enabled: Bool = true) {
         self.id = UUID()
         self.value = value
         self.type = type

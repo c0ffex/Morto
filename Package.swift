@@ -31,7 +31,8 @@ let package = Package(
         ),
         .target(
             name: "CallBlockDirectory",
-            dependencies: ["CallBlockShared"]
+            dependencies: ["CallBlockShared"],
+            exclude: ["Info.plist"]
         ),
     ]
 )
