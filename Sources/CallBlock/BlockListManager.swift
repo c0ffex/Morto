@@ -47,6 +47,7 @@ final class BlockListManager: ObservableObject {
         return entries
     }
 
+    // save entries
     func saveEntries() {
         store?.saveBlockList(entries)
     }
