@@ -23,5 +23,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: CallBlock.ipa
-          path: .build/*.ipa
+          path: xtool/*.ipa
           if-no-files-found: error
